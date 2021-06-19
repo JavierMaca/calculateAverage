@@ -10,7 +10,7 @@
             <div class="form-group row">
               <input type="text" class="form-control col-md-5 mr-4" formControlName="qualification" placeholder="qualification...">
               <button type="submit" class="btn btn-primary col-md-6" [disabled]="form.invalid"><i class="far fa-save"></i> Save </button>
-              <!-- <span *ngIf="form.invalid">Numbers only*</span> -->
+              <span *ngIf="validField()" style="color: red;">numbers only*</span>
             </div>
             <hr>
           
